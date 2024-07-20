@@ -1,10 +1,23 @@
 import express  from "express"
 import cors from 'cors'
 import morgan from "morgan"
-import "path"
-import * as path from 'path';
+// import "path"
+import path from 'path';
+import { fileURLToPath } from "url";
+
+
 
 import uploadRoutes from './routes/uploadRoutes.js'
+
+
+
+
+
+
+
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 
 const app = express();
